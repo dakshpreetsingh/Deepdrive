@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Firebase Storage App</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="style.css">
+
+  
+</head>
+<body>
+  <h1>Deep Drive</h1>
+
+  <input type="email" id="email" placeholder="Email" />
+  <input type="password" id="password" placeholder="Password" />
+  <br/>
+  <button onclick="signUp()">Sign Up</button>
+  <button onclick="login()">Login</button>
+  <button onclick="logout()">Logout</button>
+  <br/><br/>
+
+  <h2>Upload a File</h2>
+  <input type="file" id="fileInput" />
+  <button onclick="uploadFile()">Upload File</button>
+  <br/><br/>
+
+  <h2>Uploaded Files</h2>
+  <button onclick="listFiles()">List Uploaded Files</button>
+  <ul id="fileList"></ul>
+
+  <div id="uploadSection" style="display:none;">
+    <h2>Upload a File</h2>
+    <input type="file" id="fileInput" />
+    <button onclick="uploadFile()">Upload File</button>
+    <br/><br/>
+    <h2>Uploaded Files</h2>
+    <button onclick="listFiles()">List Uploaded Files</button>
+    <ul id="fileList"></ul>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  
+
+
+  <script type="module" src="./script.js"></script>
+</body>
+</html>

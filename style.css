@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: #f7f9fc;
+    color: #111;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Heading Styles */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Input Styles */
+  input[type="email"],
+  input[type="password"],
+  input[type="file"] {
+    margin: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 250px;
+    max-width: 100%;
+  }
+  
+  /* Button Styles */
+  button {
+    margin: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 250px;
+    max-width: 100%;
+  }
+  
+  button:hover {
+    background-color: #3730a3;
+  }
+  
+  /* Subtitle Styles */
+  h2 {
+    margin-top: 2rem;
+    color: #222;
+    font-size: 1.25rem;
+  }
+  
+  /* List Styles */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0.5rem 0;
+  }
+  
+  /* Link Styles */
+  a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Dark Mode Styles */
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #121212;
+      color: #e4e4e4;
+    }
+  
+    input,
+    button {
+      background-color: #1e1e1e;
+      color: #fff;
+      border: 1px solid #444;
+    }
+  
+    button {
+      background-color: #6366f1;
+    }
+  
+    button:hover {
+      background-color: #4f46e5;
+    }
+  
+    a {
+      color: #93c5fd;
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    input[type="email"],
+    input[type="password"],
+    input[type="file"],
+    button {
+      width: 90%;
+      max-width: none;
+    }
+  
+    h2 {
+      font-size: 1.1rem;
+    }
+  
+    ul {
+      padding-left: 20px;
+    }
+  
+    li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      padding: 1rem;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    h2 {
+      font-size: 1rem;
+    }
+  
+    button {
+      width: 90%;
+    }
+  
+    input[type="email"],
+    input[type="password"],
+    input[type="file"] {
+      width: 90%;
+    }
+  }
+  
+  button.delete {
+    background-color: #dc2626;
+    transition: background-color 0.2s ease;
+    width: 50px;
+  }
+  
+  button.delete:hover {
+    background-color: #4d0404;
+  }
+  
+  .file-entry {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .file-entry a {
+    color: #8ab4f8;
+    text-decoration: none;
+    word-break: break-word;
+  }
+  
+  .file-entry button {
+    background: #6a5acd;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .file-entry button:hover {
+    background: #4b3dbb;
+  }
+  
+  
